@@ -11,7 +11,7 @@ deployment:
   staging:
     branch: master
     codedeploy:
-      appname-1234:
+      my-app-staging:
         application_root: /
         region: us-east-1
         revision_location:
