@@ -11,4 +11,5 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync /home/ubuntu/todo-client s3://demo-s3-application --region us-east-1
+      - npm run build
+      - aws s3 sync /home/ubuntu/todo-client/build s3://demo-s3-application --region us-east-1
