@@ -1,19 +1,10 @@
-import _ from 'lodash';
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 import {
-  Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment, Visibility, Button
+  Container, Divider, Image, List, Segment,
 } from 'semantic-ui-react'
 import { MenuWrap, MenuWrapContainer, MenuUl, MenuLi } from './styles';
 const { images } = global.ASSETS || {};
-const menuStyle = {
-  border: 'none',
-  borderRadius: 0,
-  boxShadow: 'none',
-  marginBottom: '1em',
-  marginTop: '4em',
-  transition: 'box-shadow 0.5s ease, padding 0.5s ease',
-}
+
 
 
 export default class Layout extends Component {
@@ -28,7 +19,6 @@ export default class Layout extends Component {
 
 
   render() {
-    const { activeItem } = this.state
 
     return (
       <div>

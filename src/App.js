@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
 import { routes } from './routes';
 import { Home } from './containers';
 

@@ -2,10 +2,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
-import { Container, Grid, Input, Label, Menu, Card, Image, Button, Segment } from 'semantic-ui-react';
+import { Container, Grid, Input, Label, Menu, Card, Image, Button } from 'semantic-ui-react';
 import { Carousel } from 'react-responsive-carousel';
 import { HomeContent } from './styles';
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import  'react-responsive-carousel/lib/styles/carousel.min.css';
 
 //=== import internal ===
 const { Layout } = global.COMPONENTS || {};
@@ -63,13 +63,13 @@ class Home extends Component {
             <Grid.Column computer={12} mobile={16} tablet={12}>
             <Carousel>
                   <div>
-                    <img src="http://tungtung.vn/static/home/sliders/slider_3.jpg" />
+                    <img alt="" src="http://tungtung.vn/static/home/sliders/slider_3.jpg" />
                   </div>
                   <div>
-                    <img src="http://tungtung.vn/static/home/sliders/slider_4.jpg" />
+                    <img alt=""  src="http://tungtung.vn/static/home/sliders/slider_4.jpg" />
                   </div>
                   <div>
-                    <img src="http://tungtung.vn/static/home/sliders/slider_1.jpg" />
+                    <img alt=""  src="http://tungtung.vn/static/home/sliders/slider_1.jpg" />
                   </div>
                 </Carousel>
             </Grid.Column>
