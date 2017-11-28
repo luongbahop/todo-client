@@ -12,4 +12,4 @@ deployment:
     branch: master
     codedeploy:
       prod:
-        - aws s3 sync /home/ubuntu/circle-ci-aws-s3-deploy s3://demo-s3-application --region us-east-1
+        - aws s3 sync /home/ubuntu/todo-client s3://demo-s3-application --region us-east-1
