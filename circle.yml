@@ -7,3 +7,16 @@ test:
   post:
     - npm install -g codeclimate-test-reporter
     - codeclimate-test-reporter < coverage/lcov.info
+deployment:
+  staging:
+    branch: master
+    codedeploy:
+      appname-1234:
+        application_root: /
+        region: us-east-1
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: demo-s3-application
+            key_pattern: appname-1234-{BRANCH}-{SHORT_COMMIT}
+        deployment_group: staging-group
