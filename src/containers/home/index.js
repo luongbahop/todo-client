@@ -34,7 +34,7 @@ class Home extends Component {
     return (
       <Layout >
         <Helmet>
-          <title>Home Page- Todo application</title>
+          <title>Home Page- Todo application 123</title>
           <meta name="description" content="A React.js Boilerplate Todo application" />
         </Helmet>
         <Container>
