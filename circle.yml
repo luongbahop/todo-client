@@ -11,12 +11,5 @@ deployment:
   staging:
     branch: master
     codedeploy:
-      my-app-staging:
-        application_root: /
-        region: us-east-1
-        revision_location:
-          revision_type: S3
-          s3_location:
-            bucket: demo-s3-application
-            key_pattern: my-app-staging-{BRANCH}-{SHORT_COMMIT}
-        deployment_group: staging-group
+      prod:
+        - aws s3 sync /home/ubuntu/circle-ci-aws-s3-deploy s3://demo-s3-application --region us-east-1
