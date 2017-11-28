@@ -18,5 +18,5 @@ deployment:
           revision_type: S3
           s3_location:
             bucket: demo-s3-application
-            key_pattern: appname-1234-{BRANCH}-{SHORT_COMMIT}
+            key_pattern: my-app-staging-{BRANCH}-{SHORT_COMMIT}
         deployment_group: staging-group
