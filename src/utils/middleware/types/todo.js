@@ -1,0 +1,13 @@
+//action type of todo
+
+export const TODO_FETCH = 'TODO_FETCH';
+export const TODO_FETCH_SUCCESS = 'TODO_FETCH_SUCCESS';
+export const TODO_FETCH_FAILURE = 'TODO_FETCH_FAILURE';
+
+export const TODO_SAVE = 'TODO_SAVE';
+export const TODO_SAVE_SUCCESS = 'TODO_SAVE_SUCCESS';
+export const TODO_SAVE_FAILURE = 'TODO_SAVE_FAILURE';
+
+export const TODO_DELETE = 'TODO_DELETE';
+export const TODO_DELETE_SUCCESS = 'TODO_DELETE_SUCCESS';
+export const TODO_DELETE_FAILURE = 'TODO_DELETE_FAILURE';
