@@ -12,4 +12,4 @@ deployment:
     branch: master
     commands:
       - npm run build
-      - aws s3 sync /home/ubuntu/todo-client/build s3://demo-s3-application --region us-east-1
+      - aws s3 sync /home/ubuntu/todo-client/build s3://todo-app-host --region us-east-1
